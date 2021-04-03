@@ -35,4 +35,11 @@ function getUpperCaseLetters(){
   var i = Math.floor(Math.random() * uppCaseLetters.length);
 return uppCaseLetters[i];
 }
+
+function getLowerCaseLetters(){
+  var lowCaseLetters = characterLooper(97, 123);  
+    
+  var i = Math.floor(Math.random() * lowCaseLetters.length);
+return lowCaseLetters[i];
+}
   
