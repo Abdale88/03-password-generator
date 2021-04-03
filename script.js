@@ -54,10 +54,10 @@ function generatePassword(){
   var password = '';
   var index = [];
   var userInput = 0;
-  var num1 = getUpperCaseLetters();
-  var num2 = getAllNumbers();
-  var num3 = getLowerCaseLetters();
-  var num4 = specialCharA();
+  var upperCaseLetters = getUpperCaseLetters();
+  var numCharacters = getAllNumbers();
+  var lowCaseLetters = getLowerCaseLetters();
+  var specialCharacter = specialCharA();
   var numOfChar = 0;
 
   userInput =  window.prompt("How many characters would you like your password to contain?");
@@ -75,23 +75,23 @@ function generatePassword(){
 
     while(numOfChar < userInput && userInput > 7 && userInput < 129){
       if(numOfChar < userInput){
-        var num4 = specialCharA();
-        index.push(num4);
+         specialCharacter = specialCharA();
+        index.push(specialCharacter);
         numOfChar += 1;
       }
       if(numOfChar < userInput){
-        var num2 = getAllNumbers();
-        index.push(num2);
+         numCharacters = getAllNumbers();
+        index.push(numCharacters);
         numOfChar += 1;
       }
       if(numOfChar < userInput){
-        var num3 = getLowerCaseLetters();
-        index.push(num3);
+        var lowCaseLetters = getLowerCaseLetters();
+        index.push(lowCaseLetters);
         numOfChar += 1;
       }
       if(numOfChar < userInput){
-        var num1 = getUpperCaseLetters();
-        index.push(num1);
+         upperCaseLetters = getUpperCaseLetters();
+        index.push(upperCaseLetters);
         numOfChar += 1;
       }
     }
