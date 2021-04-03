@@ -60,6 +60,11 @@ function generatePassword(){
   var num4 = specialCharA();
 
   userInput =  window.prompt("How many characters would you like your password to contain?");
+
+  if((isNaN(userInput)) || userInput <= 7 || userInput >= 129){
+    window.alert("please enter a valid number");
+     return null
+  }
 }
 
 
