@@ -95,6 +95,9 @@ function generatePassword(){
         numOfChar += 1;
       }
     }
+
+    password = index.join(""); 
+  return password;
 }
 
 
