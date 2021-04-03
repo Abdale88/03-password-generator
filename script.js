@@ -21,4 +21,11 @@ function characterLooper(low, high){
   }
   return arrLoop;
 }
+
+function specialCharA(){
+  var specialCharacter = characterLooper(33, 47).concat(characterLooper(58, 64)).concat(characterLooper(91, 96)).concat(characterLooper(123, 126)); 
+ 
+  var i = Math.floor(Math.random() * specialCharacter.length);
+return specialCharacter[i];
+}
   
