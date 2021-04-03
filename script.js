@@ -58,5 +58,9 @@ function generatePassword(){
   var num2 = getAllNumbers();
   var num3 = getLowerCaseLetters();
   var num4 = specialCharA();
+
+  userInput =  window.prompt("How many characters would you like your password to contain?");
 }
+
+
   
