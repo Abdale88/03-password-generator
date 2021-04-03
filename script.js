@@ -42,4 +42,11 @@ function getLowerCaseLetters(){
   var i = Math.floor(Math.random() * lowCaseLetters.length);
 return lowCaseLetters[i];
 }
+
+function getAllNumbers(){
+  var numCharacters = characterLooper(48, 58);  
+  
+  var i = Math.floor(Math.random() * numCharacters.length);
+return numCharacters[i];
+}
   
