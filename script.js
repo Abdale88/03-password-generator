@@ -72,6 +72,8 @@ function generatePassword(){
     window.confirm("Click ok to confirm including lowercase letters");
     window.confirm("Click ok to confirm including uppercase letters");
   }
+
+    while(numOfChar < userInput && userInput > 7 && userInput < 129){}
 }
 
 
