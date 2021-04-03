@@ -97,7 +97,7 @@ function generatePassword(){
     }
 
     password = index.join(""); 
-  return password;
+  return password; 
 }
 
 
