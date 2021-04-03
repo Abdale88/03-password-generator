@@ -49,4 +49,14 @@ function getAllNumbers(){
   var i = Math.floor(Math.random() * numCharacters.length);
 return numCharacters[i];
 }
+
+function generatePassword(){
+  var password = '';
+  var index = [];
+  var userInput = 0;
+  var num1 = getUpperCaseLetters();
+  var num2 = getAllNumbers();
+  var num3 = getLowerCaseLetters();
+  var num4 = specialCharA();
+}
   
