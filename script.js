@@ -73,7 +73,28 @@ function generatePassword(){
     window.confirm("Click ok to confirm including uppercase letters");
   }
 
-    while(numOfChar < userInput && userInput > 7 && userInput < 129){}
+    while(numOfChar < userInput && userInput > 7 && userInput < 129){
+      if(numOfChar < userInput){
+        var num4 = specialCharA();
+        index.push(num4);
+        numOfChar += 1;
+      }
+      if(numOfChar < userInput){
+        var num2 = getAllNumbers();
+        index.push(num2);
+        numOfChar += 1;
+      }
+      if(numOfChar < userInput){
+        var num3 = getLowerCaseLetters();
+        index.push(num3);
+        numOfChar += 1;
+      }
+      if(numOfChar < userInput){
+        var num1 = getUpperCaseLetters();
+        index.push(num1);
+        numOfChar += 1;
+      }
+    }
 }
 
 
