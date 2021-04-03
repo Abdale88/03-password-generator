@@ -5,28 +5,20 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+  
   passwordText.value = password;
-
 }
+ 
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
 
-function generatePassword(){
-  var password
-  var specialChar = """!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-  console.log()
-
-
-  // hint: var specialChar = """!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-  // console.log(specialChar[1]);
-  //ask for the length of pw
-  // validate response pw
-  return password;
-
+function characterLooper(low, high){
+  var arrLoop = [];
+  for(var i = low; i <= high; i++){
+    arrLoop.push(String.fromCharCode(i));
+  }
+  return arrLoop;
 }
-
-// Note:
-// inputs are gonna be strings
+  
