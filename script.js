@@ -58,12 +58,19 @@ function generatePassword(){
   var num2 = getAllNumbers();
   var num3 = getLowerCaseLetters();
   var num4 = specialCharA();
+  var numOfChar = 0;
 
   userInput =  window.prompt("How many characters would you like your password to contain?");
 
   if((isNaN(userInput)) || userInput <= 7 || userInput >= 129){
     window.alert("please enter a valid number");
      return null
+  }
+  else{
+    window.confirm("Click ok to confirm including special characters.");
+    window.confirm("Click ok to confirm including numeric characters");
+    window.confirm("Click ok to confirm including lowercase letters");
+    window.confirm("Click ok to confirm including uppercase letters");
   }
 }
 
