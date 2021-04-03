@@ -28,4 +28,11 @@ function specialCharA(){
   var i = Math.floor(Math.random() * specialCharacter.length);
 return specialCharacter[i];
 }
+
+function getUpperCaseLetters(){
+  var uppCaseLetters = characterLooper(65, 91);
+  
+  var i = Math.floor(Math.random() * uppCaseLetters.length);
+return uppCaseLetters[i];
+}
   
